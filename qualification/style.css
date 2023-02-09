@@ -1,0 +1,116 @@
+table{
+    margin-top: 5%;
+    height: 60%;
+    width: 90%;
+    color: white;
+    border-color: aliceblue;
+}
+
+.div-td{
+    width: 50%;
+    height: 50%;
+    text-align: left;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.div-profile {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-image: url("/img/profile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-icons{
+    height: 8%;
+    width: 40%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    opacity: 0.6;
+}
+
+i{
+    color: white;
+    opacity: 1;
+}
+
+h5{
+    color: gainsboro;
+    opacity: 0.6;
+}
+
+.animate__animated.animate__backInLeft {
+    --animate-duration: 4s;
+}
+
+.animate__animated.animate__backInRight {
+    --animate-duration: 5s;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
+
+button:before, button:after{
+  box-sizing: border-box;
+  padding: 0; margin: 0;
+  font: 300 1em/1.5 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+section.container{
+    min-width: 500px;
+    margin: 10% auto;
+    text-align: center;
+  }
+    a:hover{border-bottom: 1px solid rgb(223, 235, 223);} 
+    h1{font-size: 2em; padding: 20px 0;}
+    p{
+      font-size: .75em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 20px 0;
+    }
+
+    button:hover{cursor: pointer}
+    button {
+      background: transparent; outline: none;
+      position: relative;
+      border: 2px solid rgb(159, 243, 3);
+      padding: 15px 50px;
+      overflow: hidden;
+      color: rgb(255, 255, 255);
+    }
+
+    /*button:before (attr data-hover)*/
+    button:hover:before{opacity: 1; transform: translate(0,0);}
+    button:before{
+      content: attr(data-hover);
+      position: absolute;
+      top: 1.1em; left: 0;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+    }
+      /*button div (button text before hover)*/
+      button:hover div{opacity: 0; transform: translate(100%,0)}
+      button div{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        transition: all .3s ease-in-out;
+      }

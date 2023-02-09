@@ -1,0 +1,142 @@
+h2{
+    margin-top: 10%;
+    color: gainsboro;
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.div-td{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.para-cv{
+    color: gainsboro;
+    opacity: 0.6;
+}
+              
+.swing:hover{
+    animation-name: swing;
+        -webkit-animation-name: swing;
+        -moz-animation-name: swing;
+    animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+}
+
+    @keyframes swing {
+        20% {transform: rotate3d(0, 0, 1, 15deg);}
+        40% {transform: rotate3d(0, 0, 1, -10deg);}
+        60% {transform: rotate3d(0, 0, 1, 5deg);}
+        80% {transform: rotate3d(0, 0, 1, -5deg);}
+        to  {transform: rotate3d(0, 0, 1, 0deg);}
+    }
+
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
+
+button:before, button:after{
+  box-sizing: border-box;
+  padding: 0; margin: 0;
+  font: 300 1em/1.5 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+section.container{
+    min-width: 500px;
+    margin: 10% auto;
+    text-align: center;
+  }
+    a:hover{border-bottom: 1px solid rgb(223, 235, 223);} 
+    h1{font-size: 2em; padding: 20px 0;}
+    p{
+      font-size: .75em;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 20px 0;
+    }
+
+    button:hover{cursor: pointer}
+    button {
+      background: transparent; outline: none;
+      position: relative;
+      border: 2px solid rgb(159, 243, 3);
+      padding: 15px 50px;
+      overflow: hidden;
+      color: rgb(255, 255, 255);
+    }
+
+    /*button:before (attr data-hover)*/
+    button:hover:before{opacity: 1; transform: translate(0,0);}
+    button:before{
+      content: attr(data-hover);
+      position: absolute;
+      top: 1.1em; left: 0;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+    }
+      /*button div (button text before hover)*/
+      button:hover div{opacity: 0; transform: translate(100%,0)}
+      button div{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        transition: all .3s ease-in-out;
+      }

@@ -1,0 +1,131 @@
+.navbar-main{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.index-bg-color{
+    background-color: black
+}
+
+.index-div-margin{
+    margin-left: 20px;
+}
+
+.div-main{
+    padding: 20px;
+}
+
+.div-bg-headr-img {
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url("/img/mainbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+ }
+
+ .hello{
+    font: optional;
+    font-size: 450px;
+    font-weight: 500px;
+    color: rgb(180, 180, 11);
+ }
+
+ .name{
+    font: optional;
+    font-size: 100px;
+    font-weight: 80px;
+    color: rgb(204, 204, 183);
+ }
+
+ .desc-about-me{
+    font: optional;
+    font-size: 40px;
+    font-weight: 20px;
+    color: rgb(204, 204, 183);
+ }
+
+ .find-out-button{
+    width: 200px;
+ }
+
+ .transition-fade{
+   opacity: 1;
+   transition: 0.8s;
+   transform: translateY(0);
+   transform-origin: top;
+ }
+
+ html.is-animating .transition-fade {
+   opacity: 1;
+   transform: translateY(100%);
+   
+ }
+
+ html.is-leaving .transition-fade {
+   opacity: 1;
+   transform: translateY(0);
+   
+ }
+
+ @media (min-width: 768px) and (max-width: 1024px) {
+  
+    .hello{
+        font: optional;
+        font-size: 200px;
+        font-weight: 200px;
+     }
+
+     .name{
+        font: optional;
+        font-size: 60px;
+        font-weight: 30px;
+     }
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  
+    .hello{
+        font: optional;
+        font-size: 340px;
+        font-weight: 300px;
+     }
+
+    .name{
+        font: optional;
+        font-size: 40px;
+        font-weight: 20px;
+ }
+    
+  }
+
+  .wrapper-typeing {
+   height: 10px;
+   /*This part is important for centering*/
+   margin-left: 100px;
+ }
+ 
+ .typing-demo {
+   width: 22ch;
+   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+   white-space: nowrap;
+   overflow: hidden;
+   border-right: 3px solid;
+   font-family: monospace;
+   font-size: 2em;
+   color: aliceblue;
+   opacity: 0.2;
+ }
+ 
+ @keyframes typing {
+   from {
+     width: 0
+   }
+ }
+     
+ @keyframes blink {
+   50% {
+     border-color: transparent
+   }
+ }
