@@ -26,14 +26,14 @@
     background-repeat: no-repeat;
     background-blend-mode: darken;
     background-size: cover;
-    background-color: green;
+    background-color: rgb(184, 172, 172);
     position: absolute;
     z-index: 1;
 }
 
 p{
   color: aliceblue;
-  opacity: 0.4;
+  opacity: 0.8;
   font-size: larger;
   font-weight: normal;
 }

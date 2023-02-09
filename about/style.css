@@ -32,6 +32,10 @@ table{
     z-index: 1;
 }
 
+.div-gap{
+    height: 150px;
+}
+
 img{
     height: 50px;
     width: 50px;
